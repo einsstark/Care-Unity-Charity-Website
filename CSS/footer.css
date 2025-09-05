@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+} 
+
+html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+.footer {
+    background-color: #3858E9;
+    color: white;
+    height: 537px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerLeft{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 5px;
+    gap: 20px;
+    width: 45vw;
+}
+
+.footer-logo{
+    filter: invert(1);
+    width: 350px;
+    margin-left: 22px;
+}
+
+
+.email-box {    background-color: #3858E9;
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    /* text-align: center; */
+    margin-left: 43px;
+    width: 90%;
+    flex-direction: column;
+}
+
+
+.email-box p {
+    margin-bottom: 20px;
+    color: white;
+    font: "inter", sans-serif;
+    font-size: 27px;
+}
+
+
+#email{
+   width: 520px;
+   font-size: 18px;
+}
+
+
+.email-box input[type="email"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.email-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.email-box button:hover {
+    background-color: #0056b3;
+}
+
+.email-submit{
+    padding: 17px 45px;
+    background-color: #23282d;
+    width: 180px;
+    font-size: 19px;
+    margin-top: 10px;
+    font-style: "inter", sans-serif;
+    transition: transform 0.2s;
+}
+
+.email-submit:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ----------Footer right starts below */
+
+.footerRight{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+    margin: 40px;
+    width: 23vw;
+} 
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contactDetails :nth-child(1){
+    font-size: 30px; 
+    font-style: "inter", sans-serif; 
+    margin-bottom: 10px;
+}
+
+
+.contactDetails :nth-child(2){
+    font-size: 18px; 
+    font-style: "inter", sans-serif; 
+
+}
+
+
+.contactDetails :nth-child(3){
+    text-decoration: underline;
+    font-size: 18px; 
+    font-style: "inter", sans-serif; 
+}
+
+
+.contactDetails :nth-child(3):hover{
+    cursor: pointer;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    gap: 10px;
+    margin-left: 48px;
+    filter: invert(1);
+}
+
+.socialIcons :hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* -------Line break---------- */
+
+.linebreak{
+    width: 100%;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+/* --------Footer copyright section---------- */
+.footercopyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 7px;
+    margin-top: 15px;
+}
+
+
+.legals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: "inter", sans-serif;
+    margin-bottom: 10px; 
+}
+
+.legals a{
+    text-decoration: none; 
+    color: white;
+    font-size: 18px; 
+}
+
+.legals a:hover{
+    text-decoration: underline;
+}
+
+.sitecopyright{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "inter", sans-serif;
+}
+
+.made-in-london{
+    font-size: 14px;
+    font-family: "inter", sans-serif;
+}
+

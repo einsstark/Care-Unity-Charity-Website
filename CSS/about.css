@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.heading1{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+
+.text1{
+    font-size: 44px;
+    color: #23282d;
+    position: absolute;
+    top: 18%;
+    left: 13%;
+    font-weight: 500;
+}
+
+.thinblackline {
+    height: 1px;
+    background-color: #23282d;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    width: 74%;
+}
+
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    top: 40%;
+    /* left: 15%; */
+    width: 72%;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+.text2-left {
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 40%;
+    margin-top: 33px;
+    font-size: 19px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.text2-left :nth-child(1){
+    margin-bottom: 1.2em;
+}
+
+
+.text2-right {
+    position: absolute;
+    top: 106%;
+    right: 0%;
+    width: 50%;
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+
+.text2-right-p1, .text2-right-p2 {
+    margin-bottom: 1.5em;
+}
+
+/* Images below */
+
+section.About-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background-color:#23282d;
+    gap: 40px; /* decrease the gap between images */
+    padding: 10px;
+}
+
+.image1, .image2, .image3 {
+    position: relative;
+    width: min(20%, 380px);
+    height: min(80%, 400px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image1 img, .image2 img, .image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.image1 img:hover, .image2 img:hover, .image3 img:hover {
+    transform: scale(1.1);
+    filter: brightness(90%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* -------Heading 2 Starts Below ------- */
+
+.heading2{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+
+.text3{
+    font-size: 44px;
+    color: #23282d;
+    position: absolute;
+    top: 18%;
+    left: 13%;
+    font-weight: 500;
+}
+
+.thinblackline2 {
+    height: 1px;
+    background-color: #23282d;
+    position: absolute;
+    top: 38%;
+    left: 13%;
+    width: 74%;
+}
+
+.text4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    top: 40%;
+    /* left: 15%; */
+    width: 72%;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+
+.text4-left {
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 40%;
+    margin-top: 33px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+
+.text4-left > :first-child {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56, 88, 233);
+    margin-bottom: 1.2em;
+}
+
+.text4-left > :nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+.text4-left > :nth-child(3) {
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+
+.text4-right {
+    position: absolute;
+    top: 106%;
+    right: 0%;
+    width: 40%;
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.text4-right > :first-child {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(56, 88, 233);
+    margin-bottom: 1.2em;
+}
+
+.text4-right > :nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.text4-right > :nth-child(3) {
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+

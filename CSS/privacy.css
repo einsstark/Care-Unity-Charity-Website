@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  color: #23282d;
+}
+
+.privacy {
+  margin: 80px;
+}
+
+.privacy h1{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.privacy h1,
+h2,
+h3 {
+  color: #23282d;
+}
+
+.privacy h1 {
+  text-align: center;
+}
+
+.privacy h2,
+h3 {
+  margin-top: 30px;
+}
+
+.privacy h4 {
+  margin-top: 20px;
+}
+
+.privacy p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.privacy ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.privacy a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.privacy a:hover {
+  text-decoration: underline;
+}

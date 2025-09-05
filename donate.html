@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/favicon.ico" /> 
+    <title>Donate</title>
+    <link rel="stylesheet" href="CSS/donate.css">
+</head>
+<body>
+    <div id="headerContainer"></div>
+    <section class="donate-page">
+        <div>
+            Donate page is under construction 😊
+        </div>
+        <div>Please come back later.</div>
+    </section>
+
+
+    <script>
+        const headerContainer = document.getElementById('headerContainer');
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => headerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+
+    </script>
+</body>
+</html>

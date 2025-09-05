@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon icon -->
+    <link rel="icon" href="Images/favicon.ico" />
+    <title>Home - Care Unity</title>
+    <link rel="stylesheet" href="CSS/homepage.css">
+</head>
+
+<body>
+    <!--
+        Div container for header.html content.
+        This is a container for the header of the page.
+        It is populated with the content of the header.html file
+        using JavaScript.
+    -->
+    <div id="headerContainer"></div>
+
+    <!-- Frame 1 below -->
+    <section class="frame-1">
+
+        <div class="message">
+            <h1 class="text-1">
+                Participate as a volunteer today
+            </h1>
+
+            <p class="text-2">
+                Your commitment and skills can greatly enhance the quality of life for many.
+            </p>
+
+        </div>
+
+
+        <div class="frame1-img">
+            <img src="Images/peopleVolunteering.jpeg" alt="">
+        </div>
+
+
+        <div class="statsBox">
+            <div class="stat1">
+                <div>Charity in the last year</div>
+                <div>1250+</div>
+            </div>
+
+            <div class="stat2">
+                <div>Donations received</div>
+                <div>32500+</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Frame 2 below -->
+
+    <section class="frame-2">
+
+        <h2 class="frame2-text1">
+            OUR PARTNERS
+        </h2>
+
+        <div class="organisations-logo">
+            <img src="Images/World Health Organization.jpeg" alt="">
+            <img src="Images/Healthcare products Regulatory Agency.png" alt="">
+            <img src="Images/NHS.png" alt="">
+            <img src="Images/The Health Foundation.png" alt="">
+            <img src="Images/Cancer Research UK.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- Frame 3 below -->
+
+    <section class="frame-3">
+
+        <h2 class="Impact">Our Impact</h2>
+
+        <div class="text-contents">
+
+            <div class="text-contents-font">Care Unity worked on improving the lives of over 150K people throughout the UK and thousands others worldwide.</div>
+
+            <div>
+                <p class="text-contents-font">Every day, countless individuals, just like you and me, come together to offer their time, resources, and compassion to those in need. Care Unity's strong community of generous contributors, dedicated volunteers, and passionate staff members share a common goal – to prevent and alleviate suffering, both within our local communities and on a global scale.</p>
+            </div>
+
+            <div class="text-contents-font">Learn more about our <a
+                    style="color:white; text-decoration: underline; cursor: pointer;"
+                    href="campaigns.html">campaigns</a>.
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--- Frame 4 below --->
+
+    <section class="frame-4">
+
+        <div class="frame-4-texts">
+
+            <h2 class="frame-4-text1">
+                GIVE US A HAND
+            </h2>
+
+            <div class="frame-4-text2">
+                Support us and change the course of people's life today!
+            </div>
+
+            <div class="frame-4-btn">
+                <a class="remove-text-decoration" href="donate.html">Donate here</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Div container for footer.html content. This is a container for the footer of the page. It is populated with the content of the footer.html file using JavaScript. -->
+    <div id="footerContainer"></div>
+
+    <script>
+        const headerContainer = document.getElementById('headerContainer');
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => headerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+
+    </script>
+
+    <script>
+        const footerContainer = document.getElementById('footerContainer');
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => footerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>

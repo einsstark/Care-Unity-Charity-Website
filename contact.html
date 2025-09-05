@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/favicon.ico" /> 
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<body>
+    <div id="headerContainer"></div>
+
+
+    <section class="heading1">
+
+        <div class="text1">
+            Contact
+        </div>
+
+        <div class="thinblackline">
+
+            <div class="text4">
+                <div class="text4-left">
+                    <div></div>
+
+                    <div>
+                        Way to reach Care Unity:
+                    </div>
+
+                    <div class="Phone-numbers">
+
+                        <div class="email-adress">
+                            Email: <span class="underlineHover">careunity@info.com</span>
+                        </div>
+
+                        <div> Phone number listings:
+                        </div>
+                        <div>Main Phone Number: +44 800 733 2767</div>
+
+                        <div>Training/Certification Issues: +44 800 733 2767 > prompt "Training & Certification"</div>
+
+                        <div>Employment Verification: +44 800 367 5690 (code: 20022)</div>
+
+                        <div>Employment DOT Verifications: Secure eFax +44 224 649 8217</div>
+
+                        <div>Vendors (for existing vendors only): +44 808 316 4695</div>
+
+                        <div>If you are a vendor/supplier looking to partner with Care Unity, please <a
+                                class="underlineHover" href="contact.html">click here.</a>
+
+                        </div>
+                        <div class="educational-purposes">
+                            *The number listed above is for educational purposes only. These are not official numbers.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text4-right">
+                    <div></div>
+
+                    <div>
+                        Our Address:
+                    </div>
+
+                    
+                    <!-- Map container -->
+                    <div class="map-container">
+                       
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.9994620461434!2d0.07312031250686794!3d51.5499088717055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a6669a975c6f%3A0xf80de6e1a786b3c6!2s2%20Mortlake%20Rd%2C%20Ilford%20IG1%202SX!5e0!3m2!1sen!2suk!4v1715212919688!5m2!1sen!2suk"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            >
+                        </iframe>
+                        <!-- End of map container -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div id="footerContainer"></div>
+
+    <script>
+        const headerContainer = document.getElementById('headerContainer');
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => headerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+
+    </script>
+
+    <script>
+        const footerContainer = document.getElementById('footerContainer');
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => footerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+    </script>
+
+</body>
+
+</html>

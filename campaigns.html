@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/favicon.ico"/> 
+    <title>Campaigns</title>
+    <link rel="stylesheet" href="CSS/campaigns.css">
+</head>
+
+<body>
+
+    <div id="headerContainer"></div>
+
+    <!-- heading 1 start here -->
+    <section class="heading1">
+
+        <h1 class="text1">
+            Campaings
+        </h1>
+
+        <div class="thinblackline">
+
+            <div class="text4">
+                <div class="text4-left">
+                    <div></div>
+
+                    <div>
+                        At Care Unity, our campaings extends far beyond rhetoric; it's a commitment woven into every action we take.
+                    </div>
+
+                    <div>
+                        We are dedicated to proactively alleviating suffering through concrete measures that make a difference. This includes operating shelters to provide refuge, nourishment, and emotional support to individuals affected by disasters of all scales.
+                    </div>
+                </div>
+
+
+                <div class="text4-right">
+                    <div></div>
+
+                    <div>
+                        We play a pivotal role in safeguarding public health by supplying approximately 40% of the
+                        nation's blood, ensuring that hospitals and medical facilities have the vital resources they need to save lives in times of emergency.
+                    </div>
+
+                    <div>
+                        Moreover, our commitment to community resilience extends to education and empowerment. Through our programs, we teach life-saving skills that equip individuals with the knowledge and tools to respond effectively to emergencies, potentially saving countless lives in the process.
+                    </div>
+                </div>
+
+
+
+            </div>
+    </section>
+
+    <!-- Campaigns Heading -->
+    <section class="campaign-heading">
+        <h2>
+            Our Mission Services
+        </h2>
+    </section>
+
+    <section class="campaign-cards">
+        <div class="campaign-heading"></div>
+        <div class="card">
+            <div class="text-container">
+                <img src="Images/Disaster Relief .jpeg" alt="">
+                <div class="card-text">
+                    <h3>Disaster Relief</h3>
+                    <p>From minor household fires to widespread natural calamities spanning multiple states, the Care
+                        Unity mobilizes to every location in need.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="text-container">
+                <img src="Images/Blood Services.webp" alt="">
+                <div class="card-text">
+                    <h3>Blood Services
+                    </h3>
+                    <p>With over 100 blood donation centers nationwide, we collect approximately 1 million units of
+                        blood annually. Our state-of-the-art facilities adhere to the highest...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text-container">
+                <img src="Images/Armed Forces .webp" alt="">
+                <div class="card-text">
+                    <h3>Armed Forces </h3>
+                    <p>
+                        We stand by members of the military, veterans, and their families, aiding them in navigating the
+                        complexities of military life. Our volunteers offer essential comforts...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="text-container">
+                <img src="Images/Training services .webp" alt="">
+                <div class="card-text">
+                    <h3>Training services</h3>
+                    <p>Our comprehensive training courses cover CPR and AED, First Aid, BLS (Basic Life Support),
+                        Babysitting, Caregiving, Lifeguarding Water Safety, and beyond.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="text-container">
+                <img src="Images/International Services .webp" alt="">
+                <div class="card-text">
+                    <h3>International Services</h3>
+                    <p>
+                        We've reached over 10 million individuals worldwide with life-saving aid and support annually,
+                        fostering resilience and hope in times of crisis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="text-container">
+                <img src="Images/Volunteer Services.webp" alt="">
+                <div class="card-text">
+                    <h3>Volunteer Services </h3>
+                    <p>With a staggering 90% of our workforce comprised of dedicated volunteers, we harness the power of
+                        community-driven action to make a meaningful impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Button -->
+    <div class="campaign-donatebtn">
+        <div class="left-text">
+            Want to support our Mission Services? 
+        </div>
+        <a class="remove-text-decoration" href="donate.html">
+            <div class="rightbtn">
+                Donate Now
+            </div>
+        </a>
+    </div>
+
+    <div id="footerContainer"></div>
+
+    <script>
+        const headerContainer = document.getElementById('headerContainer');
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => headerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+
+    </script>
+
+    <script>
+        const footerContainer = document.getElementById('footerContainer');
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => footerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>

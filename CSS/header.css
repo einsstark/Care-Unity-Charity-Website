@@ -1,0 +1,148 @@
+/**
+ * Import the Inter font family from Google Fonts.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Hide horizontal scrollbar on the entire page */
+
+.header {
+  width: 100%;
+  position: relative;
+  border-radius: 2px;
+  background-color: #23282d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  height: 75px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+}
+
+.websiteLogo {
+  position: absolute;
+  top: 19px;
+  left: 34px;
+}
+
+.websiteLogo img {
+  width: 180px;
+  filter: invert(1); /*change the color of the logo to white*/
+  margin: 0 auto;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  font-size: 18px;
+  width: 25vw;
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.navLink:hover {
+  color: #ccc;
+  transform: scale(1.1);
+}
+
+
+.navLink:hover {
+  cursor: pointer;
+}
+
+.searchBar {
+  position: absolute;
+  top: 18px;
+  right: 145px; 
+
+  /* To give space between search bar and nav list */
+  margin-right: 20px;
+}
+
+.searchBar form {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  right: 75px;
+}
+
+.searchBar input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+.searchBar button {
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: #23282d;
+  font-family: "Inter", sans-serif;
+}
+
+.searchBar button:hover {
+  background-color: #f0f0f0;
+}
+
+.searchBar i {
+  margin-left: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+.searchIcon{
+  width: 28px;
+  padding-right: 10px;
+}
+
+.searchIcon:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.donatebtn {
+  background-color: #3858e9;
+  color: white;
+  padding: 11px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  right: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.donatebtn:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/favicon.ico" /> 
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+
+<body>
+    
+    <div id="headerContainer"></div>
+
+    <section class="heading1">
+
+        <h1 class="text1">
+            Who We Are
+        </h1>
+
+        <div class="thinblackline">
+
+            <div class="text2">
+                <div class="text2-left">
+                   
+                   <div>
+                     We are a team of change-makers who believe that every helping hand can provide relief and support to
+                     those in crisis.
+                   </div>
+
+                   <div>
+
+                    Care Unity is not a government agency. Care Unity is a registered 501(c)(3) nonprofit organization that depends on volunteers and the generosity of people of the United Kingdom 🇬🇧 to deliver its mission.
+                   </div>
+
+
+                </div>
+
+
+                <div class="text2-right">
+                    <p class="text2-right-p1">Every single day, an abundance of compassionate souls, individuals who
+                        resonate with the values of Care Unity, extend their heartfelt compassion to those grappling
+                        with adversity. Together, within our interconnected network of benefactors, volunteers, and
+                        dedicated team members, we rally around a shared mission: to alleviate suffering, fostering hope
+                        and resilience on both local and global scales.</p>
+
+                    <p class="text2-right-p2">We now run shelter homes, schools and a reasonable mess that helps such
+                        needy young people. We also have our helpline offices spread throughout the country so one can
+                        approach us anytime they need help.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="About-images">
+
+        <div class="image1">
+            <img src="Images/About-image1.webp" alt="">
+        </div>
+
+        <div class="image2">
+            <img src="Images/About-image2.webp" alt="">
+        </div>
+        <div class="image3">
+            <img src="Images/About-image3.webp" alt="">
+        </div>
+    </section>
+
+    <section class="heading2">
+
+        <h2 class="text3">
+            Our Approach
+        </h2>
+
+        <div class="thinblackline2">
+
+            <div class="text4">
+                <div class="text4-left">
+                    <div>Our Mission</div>
+
+                    <div>
+                        At Care Unity, our mission is to extend compassion and support to those facing adversity, both locally and globally. 
+                    </div>
+
+                    <div>
+                        Through our network of donors, volunteers, and dedicated team members, we strive to alleviate suffering, foster resilience, and empower communities to confront challenges with confidence. 
+                    </div>
+                </div>
+
+                <div class="text4-right">
+                    <div>Our Vision</div>
+
+                    <div>
+                        Our vision at Care Unity is to create a world where every individual, including those affected by environmental crises, receives the support they need to thrive.
+                    </div>
+                    
+                    <div>
+                        We envision a future where compassion, empowerment, and solidarity extend to all, ensuring that those impacted by environmental challenges find solace and assistance on their path to resilience and recovery.
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <div id="footerContainer"></div>
+
+
+    <script>
+        const headerContainer = document.getElementById('headerContainer');
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => headerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+
+    </script>
+
+    <script>
+        const footerContainer = document.getElementById('footerContainer');
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => footerContainer.innerHTML = html)
+            .catch(error => console.error(error));
+
+    </script>
+</body>
+
+</html>
